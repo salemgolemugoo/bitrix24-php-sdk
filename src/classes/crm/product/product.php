@@ -43,6 +43,30 @@ class Product extends Bitrix24Entity
         return $fullResult;
     }
 
+    public function add($fields = array())
+    {
+        $fullResult = $this->client->call(
+            'crm.product.add',
+            array(
+                'fields' => $fields
+            )
+        );
+
+        return $fullResult;
+    }
+
+    public function update($productId, $fields = array())
+    {
+        $fullResult = $this->client->call(
+            'crm.product.update',
+            array(
+                'id' => $productId,
+                'fields' => $fields
+            )
+        );
+
+        return $fullResult;
+    }
 }
 
 

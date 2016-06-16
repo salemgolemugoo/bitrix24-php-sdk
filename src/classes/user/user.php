@@ -78,5 +78,13 @@ class User extends Bitrix24Entity
 		);
 		return $result;
 	}
+
+	public function add(array $params)
+	{
+		$this->client->call(
+			'user.add',
+			$params
+		);
+	}
 }
 
