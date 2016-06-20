@@ -1,5 +1,5 @@
 <?php
-namespace Bitrix24\CRM;
+namespace Bitrix24\CRM\Product;
 use Bitrix24\Bitrix24Entity;
 
 class Product extends Bitrix24Entity
